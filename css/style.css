@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+:root{
+
+    --violet-doux:#6C63FF;
+    --violet-fonce: #534EDD;
+    --orange-vif: #FFA725;
+    --gris-tres-fonce: #333;
+    ---gris-tres-clair: #F8F8F8;
+    --gris-clair:#EEE;
+
+
+}
+
+h1{
+    color:var(--violet-fonce);
+}
