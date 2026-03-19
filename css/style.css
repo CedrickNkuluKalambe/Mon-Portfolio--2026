@@ -1,9 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
 :root{
 
     --violet-doux:#6C63FF;
@@ -12,10 +8,35 @@ body {
     --gris-tres-fonce: #333;
     ---gris-tres-clair: #F8F8F8;
     --gris-clair:#EEE;
+}
 
+*  {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(---gris-tres-clair);
+  line-height: 1.6rem;
+}
+header{
+    background-color: white;
+    box-shadow: 2px 6px  10px rgba(0, 0, 0, 0.05);
+    position:sticky;
+    top:0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+header div a {
+    text-decoration:none;
+    font-size: 2.2 rem;
+    font-weight:  bold;
+    color: var(--violet-doux);
 
 }
 
-h1{
-    color:var(--violet-fonce);
-}
+
