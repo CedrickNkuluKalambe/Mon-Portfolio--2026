@@ -97,9 +97,8 @@ a.active::after{
     align-items: center;
     gap:5rem;
     text-align: center;
-    margin: 10rem
-    
-
+    margin: 10rem;
+ 
 }
 .hero img{
     width: 300px;
@@ -114,7 +113,7 @@ a.active::after{
     color:var(--violet-fonce);
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 1.2rem;
+    margin-bottom: 2.2rem;
 }
 .hero p {
     color:var(--gris-fonce);
@@ -138,8 +137,38 @@ a.active::after{
     background-color: var(--violet-fonce);
     transform: translateY(-3px);
 }
-
- 
+.apropos  {
+    /* largeur du bloc a propos */
+    width: 800px;
+    /* marge */
+    margin: 6rem auto;
+    /* centrer le texte */
+    text-align: center;
+}
+section h2 {
+    color:var(--violet-doux);
+    /* la taille du texte */
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    /* marge en haut et en bas (a propos) */
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+.apropos p {
+    margin-bottom: 2rem;
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+    
+}
 
 
 
