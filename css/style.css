@@ -401,6 +401,110 @@ footer a:hover{
     transform: translateY(-3px);
 }
 
+.hero-passions {
+    background: linear-gradient(rgba(108,99,255,0.8), rgba(83,78,221,0.8)), url('images/passions-bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    border-radius: 0 0 50px 50px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-passions h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-passions p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(108,99,255,0.3);
+}
+.hero-divertissements {
+    background: linear-gradient(rgba(255,167,37,0.85), rgba(108,99,255,0.85)), 
+                url('images/divertissements-bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    border-radius: 0 0 50px 50px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-divertissements h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-divertissements p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(255,167,37,0.4);
+}
+/* Apparition en fondu et montée */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Apparition en zoom */
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Effet de pulsation pour les icônes */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+/* Hero section animée */
+.hero-divertissements, .hero-passions {
+    animation: fadeUp 1.5s ease-in-out;
+}
+
+/* Cartes qui apparaissent avec zoom */
+.card {
+    animation: zoomIn 1s ease forwards;
+    opacity: 0; /* pour éviter qu’elles soient visibles avant l’animation */
+}
+
+/* Décalage pour chaque carte (effet cascade) */
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+.card:nth-child(4) { animation-delay: 0.8s; }
+
+/* Icônes qui pulsent au survol */
+.card h3 i:hover {
+    animation: pulse 0.6s infinite;
+    color: var(--orange-vif);
+}
+.hero-passions {
+    background: linear-gradient(rgba(108,99,255,0.85), rgba(83,78,221,0.85)), 
+                url('images/passions-bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem; /* réduit la hauteur du bandeau */
+    border-radius: 0 0 30px 30px; /* coins plus doux */
+}
+
+
+
+
 
 
 
