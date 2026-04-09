@@ -502,7 +502,29 @@ footer a:hover{
     border-radius: 0 0 30px 30px; /* coins plus doux */
 }
 
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* une seule colonne sur mobile */
+    gap: 20px;
+  }
 
+  .card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .card img {
+    height: auto;
+  }
+}
+.section {
+  padding: 20px;
+}
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}
 
 
 
