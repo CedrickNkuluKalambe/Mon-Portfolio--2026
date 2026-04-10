@@ -511,6 +511,7 @@ footer a:hover{
   .card {
     max-width: 90%;
     margin: 0 auto;
+    
   }
 
   .card img {
@@ -524,6 +525,9 @@ footer a:hover{
   h1, h2 {
     font-size: 1.5rem;
   }
+}
+a {
+    text-decoration: none;
 }
 
 
